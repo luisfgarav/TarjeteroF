@@ -30,14 +30,12 @@ public class AdaptadorDeListaDatos extends BaseAdapter{
 
     @Override
     public Object getItem(int i) {
-        arreglo.get(i);
-        return arreglo.get(i).id;
+        return arreglo.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-
-        return 0;
+        return arreglo.get(i).id;
     }
 
     @Override
